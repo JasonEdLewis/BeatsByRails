@@ -1,1 +1,10 @@
 <h5>List a New Artist Here!</h5>
+
+<%= form_for(@artist) do |f| %>
+    <%= f.label :name %> :
+    <%= f.text_field :name %>
+    <%= f.label :bio %>
+    <%= f.text_field :bio %>
+    <%= f.submit "Add Artist" %>
+<% end %>
+  
