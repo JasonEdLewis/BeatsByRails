@@ -25,11 +25,12 @@ class ArtistsController < ApplicationController
     end
 
     def edit
-        
+        #find_artist
     end
 
     def update
-    
+        @artist.update(artist_params)
+        redirect_to @artist
     end
 
 
