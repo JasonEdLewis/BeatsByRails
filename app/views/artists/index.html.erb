@@ -1,0 +1,7 @@
+<h5>Welcome to the Artist Home Page!</h5>
+
+<% @artists.each do |a| %>
+    <li>
+    <%= link_to a.name, artist_path(a.id) %>
+    </li>
+<% end %>
