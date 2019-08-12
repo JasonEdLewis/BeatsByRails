@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+Artist.destroy_all
+Genre.destroy_all
+
+
+# ============================= ARTISTS ====================================== #
 
 wayne = Artist.create(name: "Wayne Lewis", bio: "Born and Raised in GB!! Head singer of Atlantic Starr")
 jonh = Artist.create(name: "Jonny T. Lewis", bio: " Horns... A Starr")
@@ -15,3 +20,18 @@ porter = Artist.create(name: "Porter Carrol", bio: "Scotts Uncle and Theif")
 barbara = Artist.create(name: "Barbara Weathers", bio: "2nd female singer of Atlantic Starr, Always")
 sharon = Artist.create(name: "Sharon Bryant", bio: "1st female singer of Atlantic Starr, CIRCLES!!")
 cliff = Artist.create(name: "Clifford Archer", bio: "BASS..... Atlantic Starr")
+
+
+# ============================= GENRES ====================================== #
+
+hiphop = Genre.create(name: "Hip Hop")
+rock = Genre.create(name: "Rock")
+country = Genre.create(name: "Country")
+jazz = Genre.create(name: "Jazz")
+classical = Genre.create(name: "Classical")
+
+# ============================= SONGS ====================================== #
+
+
+
+

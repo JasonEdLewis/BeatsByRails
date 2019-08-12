@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
 
-    before_action :find_artist, only: [:show,:edit, :update, :delete]
+    before_action :find_artist, only: [:show,:edit, :update, :destroy]
      
     def index
         @artists = Artist.all 
@@ -33,7 +33,15 @@ class ArtistsController < ApplicationController
         redirect_to @artist
     end
 
+    def destroy
+        
+        @artist.destroy
 
+        redirect_to artists_path
+    end
+    
+    
+    private 
     def artist_params
         params.require(:artist).permit(:name, :bio)
         end

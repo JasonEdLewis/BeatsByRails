@@ -1,0 +1,10 @@
+<h5>Songs on File </h5>
+
+<ul>
+<% @songs.each do |s| %>
+   
+   <li>"<%= s.name %>" By: <%= s.artist.name %> </li> 
+<% end %>
+</ul>
+
+
