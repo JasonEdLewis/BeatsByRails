@@ -29,8 +29,11 @@ rock = Genre.create(name: "Rock")
 country = Genre.create(name: "Country")
 jazz = Genre.create(name: "Jazz")
 classical = Genre.create(name: "Classical")
+RandB = Genre.create(name: "R & B")
 
 # ============================= SONGS ====================================== #
+
+Song.create(name: "Always", genre_id:6, artist_id:3)
 
 
 

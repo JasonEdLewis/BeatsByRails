@@ -13,3 +13,9 @@
 <br>
 <%= button_to "Edit #{@artist.appos} Info", edit_artist_path(@artist), method: :get%>
 <%= button_to "Delete #{@artist.name}", @artist, method: :delete %>
+
+<h4>Disctography</h4>
+<% @artist.songs.each do |s| %>
+<%= link_to "#{s.name}", song_path(s.id) %>
+
+<% end %>

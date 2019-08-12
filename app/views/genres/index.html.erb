@@ -1,1 +1,12 @@
 <h5>This is the List of Genres</h5>
+
+
+<% @genres.each do |g| %>
+<ul>
+    <li>
+    
+    <%= g.name %>
+
+    </li>
+</ul>
+<% end %>
